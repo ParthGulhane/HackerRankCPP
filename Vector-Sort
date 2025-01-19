@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() 
+{
+    vector<int> v; //Vector Decleration
+    int n,ele;
+    cin>>n;
+    for(int i=0; i<n; i++)
+    {
+        cin>>ele;
+        v.push_back(ele); //Adding element to vector v
+    }
+    
+    sort(v.begin(),v.end()); //Sorting vector v in ascending order
+    
+    for(auto i : v) //Iterating through vector v with pointer i
+    {
+        cout<<i<<" "; //Printing elements of vector v
+    }
+       
+    return 0;
+}
