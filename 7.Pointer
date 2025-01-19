@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() 
+{
+    int a,b;
+    cin>>a>>b;
+    
+    int* p1=&a;
+    
+    int* p2 = &b;
+    
+    int s= *p1+*p2;
+    
+    int m= abs(*p1-*p2);
+    
+    cout<<s<<endl;
+    cout<<m<<endl;
+    return 0;
+}
